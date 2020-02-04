@@ -1,0 +1,10 @@
+node_modules
+*.jpg
+*.png
+*.svg
+*.mp3
+*.ico
+resources
+videos
+assets
+.babelrc
