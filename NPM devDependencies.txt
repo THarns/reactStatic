@@ -1,5 +1,0 @@
-npm install --save-dev @babel/core @babel/preset-env autoprefixer babel-loader copy-webpack-plugin css-loader file-loader html-webpack-plugin mini-css-extract-plugin node-sass postcss-loader raw-loader sass-loader style-loader webpack webpack-dev-server webpack-cli
-
-/***Dependency for snapsvg below***/
-
-npm i snapsvg-cjs
