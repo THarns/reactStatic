@@ -1,4 +1,5 @@
 import '../scss/index.scss';
+import React from 'react';
 
 function main() {
     //mobile navigation button

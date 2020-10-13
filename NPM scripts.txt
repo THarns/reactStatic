@@ -1,0 +1,5 @@
+/**** Place these in the package.json scripts field ****/
+
+"build:dev": "webpack --mode development",
+"build:production": "webpack --mode production",
+"start:dev": "webpack-dev-server --host 0.0.0.0 --output-public-path=/dist/ --mode development"
