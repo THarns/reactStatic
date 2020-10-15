@@ -5,9 +5,9 @@ import { Transition, animated } from 'react-spring/renderprops'
 import '../../scss/home.scss';
 import '../../scss/index.scss';
 
-const Home = () => {
+const Contact = () => {
     return (
-        <div className="landing_wrapper">
+        <div className="landing_wrapper contact_image">
             <div className="bg_container">
                 
             </div>
@@ -15,4 +15,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default Contact;

@@ -2,5 +2,13 @@
 @import './fonts.scss';
 
 .landing_wrapper {
-    background-image:url('../resources/images/backgrounds/btterfly_mushrooms.jpg');
+
+    .bg_container {
+        background-image:url('../resources/images/backgrounds/frozen_lake.jpg');
+        width:100vw;
+        height:100vh;
+        background-size:cover;
+        background-position:center;
+        position: relative;      
+    }
 }

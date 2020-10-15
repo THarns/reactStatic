@@ -34,8 +34,6 @@ body {
         @include flex-center;
         align-items:flex-start;
         position:relative;
-        background-size:cover;
-        background-position:center;
         animation:fadeIn .75s ease forwards, slideIn .25s ease forwards;
 
         h1 {
@@ -43,6 +41,14 @@ body {
             font-family:'Oswald', sans-serif;
             font-size:2rem;
             color:#fff;
+        }
+
+        .bg_container {
+            position:absolute;
+            top:0;
+            left:0;
+            animation:zoomIn 6s ease forwards;
+            animation-delay:0.25s;
         }
     }
 }
@@ -64,5 +70,15 @@ body {
 
     100% {
         transform:translateX(0vw);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform:none;
+    }
+
+    100% {
+        transform:scale(1.15);
     }
 }

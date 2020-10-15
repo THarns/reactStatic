@@ -6,7 +6,7 @@ import '../../scss/portfolio.scss';
 const Portfolio = () => {
     return (
         <div className="landing_wrapper port_image">
-            <h1>Portfolio</h1>
+            <div className="bg_container"></div>
         </div>
     );
 }
