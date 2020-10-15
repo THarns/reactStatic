@@ -1,9 +1,9 @@
 .footer_wrapper {
   width: 100vw;
-  min-height: 120px;
+  min-height: 160px;
   background-color: #212121;
   position: absolute;
-  bottom: -120px;
+  bottom: -180px;
   left: 0;
   display: flex;
   justify-content: center;
@@ -69,6 +69,7 @@ body {
   margin: 0;
   flex-shrink: 0;
   background-color: #000;
+  overflow: hidden;
   /*Shared main landing styles for all pages. Background images are defined in their respective scss files*/ }
   .wrapper #root {
     min-height: 100vh; }
@@ -80,7 +81,8 @@ body {
     align-items: center;
     align-items: flex-start;
     position: relative;
-    animation: fadeIn .75s ease forwards, slideIn .25s ease forwards; }
+    animation: fadeIn .75s ease forwards, slideIn .25s ease forwards;
+    overflow: hidden; }
     .wrapper .landing_wrapper h1 {
       margin-top: 140px;
       font-family: 'Oswald', sans-serif;
@@ -89,9 +91,7 @@ body {
     .wrapper .landing_wrapper .bg_container {
       position: absolute;
       top: 0;
-      left: 0;
-      animation: zoomIn 6s ease forwards;
-      animation-delay: 0.25s; }
+      left: 0; }
 
 @keyframes fadeIn {
   0% {
@@ -108,8 +108,20 @@ body {
 @keyframes zoomIn {
   0% {
     transform: none; }
+  65% {
+    transform: scale(1.15); }
   100% {
-    transform: scale(1.15); } }
+    transform: scale(1.13); } }
+
+.card_wrapper {
+  min-width: 90vw;
+  height: 60vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  z-index: 2; }
 
 @font-face {
   font-family: 'Oswald';
@@ -121,6 +133,22 @@ body {
 
 .port_image .bg_container {
   background-image: url(/dist/ddd6b26d78a70c281a3aa6f74acd95ae.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+@font-face {
+  font-family: 'Oswald';
+  src: url(/dist/fonts/Oswald-Regular.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Pridi';
+  src: url(/dist/fonts/Pridi-Regular.ttf) format("truetype"); }
+
+.contact_image .bg_container {
+  background-image: url(/dist/545bf9ba23c239de6aeceddc9390c029.jpg);
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -148,11 +176,4 @@ body {
   .navigation_wrapper .active_link {
     margin-top: 3px;
     border-bottom: 3px solid red; }
-
-* {
-  box-sizing: border-box; }
-
-body {
-  margin: 0;
-  overflow-x: hidden; }
 

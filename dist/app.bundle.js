@@ -466,18 +466,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 
 /***/ }),
 
-/***/ "./src/js/components/App/index.scss":
-/*!******************************************!*\
-  !*** ./src/js/components/App/index.scss ***!
-  \******************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/js/components/App/index.scss?");
-
-/***/ }),
-
 /***/ "./src/js/components/Footer/footer.js":
 /*!********************************************!*\
   !*** ./src/js/components/Footer/footer.js ***!
@@ -526,6 +514,30 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/js/components/Project_Card/Project_card.js":
+/*!********************************************************!*\
+  !*** ./src/js/components/Project_Card/Project_card.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _project_card_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./project_card.scss */ \"./src/js/components/Project_Card/project_card.scss\");\n\n\n\nvar Project_card = function Project_card() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"card_wrapper\"\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Project_card);\n\n//# sourceURL=webpack:///./src/js/components/Project_Card/Project_card.js?");
+
+/***/ }),
+
+/***/ "./src/js/components/Project_Card/project_card.scss":
+/*!**********************************************************!*\
+  !*** ./src/js/components/Project_Card/project_card.scss ***!
+  \**********************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/js/components/Project_Card/project_card.scss?");
+
+/***/ }),
+
 /***/ "./src/js/index.jsx":
 /*!**************************!*\
   !*** ./src/js/index.jsx ***!
@@ -546,7 +558,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_Footer_footer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Footer/footer.js */ \"./src/js/components/Footer/footer.js\");\n/* harmony import */ var react_spring_renderprops__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-spring/renderprops */ \"./node_modules/react-spring/renderprops.js\");\n/* harmony import */ var react_spring_renderprops__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_spring_renderprops__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _scss_home_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../scss/home.scss */ \"./src/scss/home.scss\");\n/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../scss/index.scss */ \"./src/scss/index.scss\");\n\n\n\n\n\n\nvar Contact = function Contact() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"landing_wrapper contact_image\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"bg_container\"\n  }));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Contact);\n\n//# sourceURL=webpack:///./src/js/pages/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_Footer_footer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Footer/footer.js */ \"./src/js/components/Footer/footer.js\");\n/* harmony import */ var react_spring_renderprops__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-spring/renderprops */ \"./node_modules/react-spring/renderprops.js\");\n/* harmony import */ var react_spring_renderprops__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_spring_renderprops__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _scss_contact_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../scss/contact.scss */ \"./src/scss/contact.scss\");\n/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../scss/index.scss */ \"./src/scss/index.scss\");\n\n\n\n\n\n\nvar Contact = function Contact() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"landing_wrapper contact_image\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"bg_container\"\n  }));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Contact);\n\n//# sourceURL=webpack:///./src/js/pages/contact.js?");
 
 /***/ }),
 
@@ -570,7 +582,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_Footer_footer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Footer/footer.js */ \"./src/js/components/Footer/footer.js\");\n/* harmony import */ var react_spring_renderprops__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-spring/renderprops */ \"./node_modules/react-spring/renderprops.js\");\n/* harmony import */ var react_spring_renderprops__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_spring_renderprops__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _scss_portfolio_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../scss/portfolio.scss */ \"./src/scss/portfolio.scss\");\n\n\n\n\n\nvar Portfolio = function Portfolio() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"landing_wrapper port_image\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"bg_container\"\n  }));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Portfolio);\n\n//# sourceURL=webpack:///./src/js/pages/portfolio.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_Project_Card_Project_card_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Project_Card/Project_card.js */ \"./src/js/components/Project_Card/Project_card.js\");\n/* harmony import */ var react_spring_renderprops__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-spring/renderprops */ \"./node_modules/react-spring/renderprops.js\");\n/* harmony import */ var react_spring_renderprops__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_spring_renderprops__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _scss_portfolio_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../scss/portfolio.scss */ \"./src/scss/portfolio.scss\");\n\n\n\n\n\nvar Portfolio = function Portfolio() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"landing_wrapper port_image\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    className: \"bg_container\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Project_Card_Project_card_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Portfolio);\n\n//# sourceURL=webpack:///./src/js/pages/portfolio.js?");
+
+/***/ }),
+
+/***/ "./src/scss/contact.scss":
+/*!*******************************!*\
+  !*** ./src/scss/contact.scss ***!
+  \*******************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/scss/contact.scss?");
 
 /***/ }),
 
@@ -611,13 +635,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ }),
 
 /***/ 0:
-/*!*******************************************************************!*\
-  !*** multi ./src/js/index.jsx ./src/js/components/App/index.scss ***!
-  \*******************************************************************/
+/*!******************************************************!*\
+  !*** multi ./src/js/index.jsx ./src/scss/index.scss ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./src/js/index.jsx */\"./src/js/index.jsx\");\nmodule.exports = __webpack_require__(/*! ./src/js/components/App/index.scss */\"./src/js/components/App/index.scss\");\n\n\n//# sourceURL=webpack:///multi_./src/js/index.jsx_./src/js/components/App/index.scss?");
+eval("__webpack_require__(/*! ./src/js/index.jsx */\"./src/js/index.jsx\");\nmodule.exports = __webpack_require__(/*! ./src/scss/index.scss */\"./src/scss/index.scss\");\n\n\n//# sourceURL=webpack:///multi_./src/js/index.jsx_./src/scss/index.scss?");
 
 /***/ })
 
