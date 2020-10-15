@@ -1,12 +1,14 @@
 import React from 'react';
 import Footer from '../components/Footer/footer.js';
+import { Transition, animated } from 'react-spring/renderprops'
+
 import '../../scss/home.scss';
+import '../../scss/index.scss';
 
 const Home = () => {
     return (
-        <div className="home_wrapper">
+        <div className="landing_wrapper">
             <h1>Home</h1>
-            <Footer/>
         </div>
     );
 }

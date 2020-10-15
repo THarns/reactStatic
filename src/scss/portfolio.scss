@@ -1,9 +1,6 @@
 @import './variables.scss';
 @import './fonts.scss';
 
-.portfolio_wrapper {
-    width:100vw;
-    min-height:100vh;
-    @include flex-center;
-    align-items:flex-start;
+.port_image {
+    background-image:url('../resources/images/backgrounds/sand_dunes.jpg');
 }

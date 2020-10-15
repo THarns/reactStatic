@@ -8,7 +8,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  margin: 0; }
   .footer_wrapper ul {
     width: auto;
     height: 40px;
@@ -20,11 +21,57 @@
     margin: auto 0 10px 10px;
     padding: 0; }
     .footer_wrapper ul li {
+      width: 40px;
+      height: 40px;
       margin: 0 10px 0 0; }
       .footer_wrapper ul li img {
         height: 100%;
         width: auto; }
 
+@font-face {
+  font-family: 'Oswald';
+  src: url(/dist/fonts/Oswald-Regular.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Pridi';
+  src: url(/dist/fonts/Pridi-Regular.ttf) format("truetype"); }
+
+.home_wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  position: relative;
+  background-image: url(/dist/545bf9ba23c239de6aeceddc9390c029.jpg);
+  background-size: cover;
+  background-position: center; }
+  .home_wrapper h1 {
+    margin-top: 100px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem; }
+
+@font-face {
+  font-family: 'Oswald';
+  src: url(/dist/fonts/Oswald-Regular.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Pridi';
+  src: url(/dist/fonts/Pridi-Regular.ttf) format("truetype"); }
+
+.portfolio_wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  position: relative; }
+  .portfolio_wrapper h1 {
+    margin-top: 100px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem; }
 
 .navigation_wrapper {
   width: 100vw;
@@ -33,7 +80,11 @@
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 10px; }
+  padding-left: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999; }
   .navigation_wrapper .nav_link {
     text-decoration: none;
     color: black;

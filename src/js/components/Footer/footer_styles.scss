@@ -5,7 +5,7 @@
     min-height:120px;
     background-color:#212121;
     position:absolute;
-    bottom:0;
+    bottom:-120px;
     left:0;
     @include flex-center;
     justify-content:flex-start;
