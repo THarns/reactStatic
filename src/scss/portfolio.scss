@@ -2,6 +2,11 @@
 @import './fonts.scss';
 
 .port_image {
+    flex-direction:column;
+
+    h1 {
+        margin:0;
+    }
 
     .bg_container {
         background-image:url('../resources/images/backgrounds/sand_dunes.jpg');

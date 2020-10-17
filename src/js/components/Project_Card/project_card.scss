@@ -3,11 +3,11 @@
 .card_wrapper {
     width:90vw;
     max-width:400px;
-    height:60vh;
+    min-height:60vh;
     background:#fff;
     @include flex-center;
     justify-content:flex-start;
-    margin:160px 100vw 0 0;
+    margin:60px 100vw 60px 0;
     z-index:2;
     flex-direction:column;
     opacity:0;
@@ -18,8 +18,14 @@
     .project_image {
         background-color:#212121;
         width:90%;
-        height:45%;
+        min-height:200px;
         margin:5% auto;
+        flex-shrink:0;
+
+        img {
+            width:100%;
+            height:100%;
+        }
     }
 
     .project_details {
@@ -31,14 +37,31 @@
         color:#212121;
 
         h3 {
-            font-size:2rem;
-            font-family:'Oswald', sans-serif;
+            font-size:1.5rem;
             margin:0;
+            font-family:'Oswald', sans-serif;
+        }
+
+        h4 {
+            margin:10px 0 5px 0;
+            font-family:'Pridi', sans-serif;
+            font-size:1rem;
         }
 
         p {
-            font-size:1.2rem;
+            font-size:1.1rem;
+            font-family:'Pridi', sans-serif;
         }
+    }
+
+    a {
+        position:relative;
+        bottom:5px;
+        left:30%;
+        text-decoration:none;
+        color:#212121;
+        font-size:1.2rem;
+
     }
 }
 
@@ -50,6 +73,7 @@
 
     100% {
         opacity:1;
-        margin-right:0;
+        margin-right:auto;
+        margin-left:auto;
     }
 }

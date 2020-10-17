@@ -4,8 +4,8 @@
     width:100vw;
     min-height:160px;
     background-color:#212121;
-    position:absolute;
-    bottom:-180px;
+    position: relative;
+    bottom:0;
     left:0;
     @include flex-center;
     justify-content:flex-start;

@@ -4,40 +4,47 @@ import { Transition, animated } from 'react-spring/renderprops'
 import '../../scss/portfolio.scss';
 
 const Portfolio = () => {
-    const projects = [
+    const [projects, setProject] = useState([
         {
             name:'Silhouettes vs The Sun',
-            tech:['HTML', 'CSS', 'JS', 'PHP', 'Wordpress', 'Woocommerce', 'Webpack'],
+            tech:['HTML -', ' CSS -', ' JS -', ' PHP -', ' Wordpress -', ' Woocommerce -', ' Webpack'],
             blurb:'Brochure style site done for a new album release for the artist Silhouettes vs The Sun.',
-            github:'https://github.com/THarns/SVSTS2.0'
+            github:'https://github.com/THarns/SVSTS2.0',
+            image:''
         },
 
         {
             name:'Noise In The Neighborhood',
             tech:['HTML', 'CSS', 'JS', 'PHP', 'Snap SVG', 'GSAP', 'Webpack'],
             blurb:'Custom site done for a YouTube channel that produces live content monthly.',
-            github:''
+            github:'',
+            image:''
         },
 
         {
             name:'Quake Update',
             tech:['HTML', 'CSS', 'JS', 'ThreeJS', 'MYSQL'],
             blurb:'A full stack project consisting of a script to pull data from the USGS API and store it in a MYSQL database. A backend written in Node.JS to serve the data to the frontend which was written in React and uses ThreeJS to model all the quakes on a model Earth.',
-            github:['https://github.com/THarns/QuakeDBUpdater', 'https://github.com/THarns/Quake-Dashboard-backend', 'https://github.com/THarns/Quake-Dashboard']
+            github:['https://github.com/THarns/QuakeDBUpdater', 'https://github.com/THarns/Quake-Dashboard-backend', 'https://github.com/THarns/Quake-Dashboard'],
+            image:''
         },
 
         {
             name:'This portfolio site',
             tech:['React', 'CSS', 'PHP', 'Webpack'],
             blurb:'I wanted to learn more about the React library and needed a porfolio site as well so I decided to do them in parallel.',
-            github:'https://github.com/THarns/reactStatic'
+            github:'https://github.com/THarns/reactStatic',
+            image:''
         }
-    ];
+    ]);
 
     return (
         <div className="landing_wrapper port_image">
             <div className="bg_container"></div>
-            <Project_card />
+            <h1>Websites</h1>
+            <Project_card  name={projects[0].name} tech={projects[0].tech} blurb={projects[0].blurb} link={projects[0].github} />
+            <Project_card  name={projects[1].name} tech={projects[1].tech} blurb={projects[1].blurb} link={projects[1].github} />
+            <h2>Logos</h2>
         </div>
     );
 }
