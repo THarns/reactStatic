@@ -6,6 +6,50 @@
     height:60vh;
     background:#fff;
     @include flex-center;
-    margin:160px 0 0 0;
+    justify-content:flex-start;
+    margin:160px 100vw 0 0;
     z-index:2;
+    flex-direction:column;
+    opacity:0;
+    flex-shrink:0;
+    animation:slideInLeft .75s ease forwards;
+    animation-delay:.5s;
+
+    .project_image {
+        background-color:#212121;
+        width:90%;
+        height:45%;
+        margin:5% auto;
+    }
+
+    .project_details {
+        @include flex-center;
+        justify-content:flex-start;
+        flex-direction:column;
+        width:90%;
+        height:auto;
+        color:#212121;
+
+        h3 {
+            font-size:2rem;
+            font-family:'Oswald', sans-serif;
+            margin:0;
+        }
+
+        p {
+            font-size:1.2rem;
+        }
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity:0;
+        margin-right:100vw;
+    }
+
+    100% {
+        opacity:1;
+        margin-right:0;
+    }
 }

@@ -91,7 +91,9 @@ body {
     .wrapper .landing_wrapper .bg_container {
       position: absolute;
       top: 0;
-      left: 0; }
+      left: 0;
+      animation: zoomIn 6s ease forwards;
+      animation-delay: 0.25s; }
 
 @keyframes fadeIn {
   0% {
@@ -108,20 +110,53 @@ body {
 @keyframes zoomIn {
   0% {
     transform: none; }
-  65% {
-    transform: scale(1.15); }
   100% {
-    transform: scale(1.13); } }
+    transform: scale(1.15); } }
 
 .card_wrapper {
-  min-width: 90vw;
+  width: 90vw;
+  max-width: 400px;
   height: 60vh;
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  z-index: 2; }
+  justify-content: flex-start;
+  margin: 160px 100vw 0 0;
+  z-index: 2;
+  flex-direction: column;
+  opacity: 0;
+  flex-shrink: 0;
+  animation: slideInLeft .75s ease forwards;
+  animation-delay: .5s; }
+  .card_wrapper .project_image {
+    background-color: #212121;
+    width: 90%;
+    height: 45%;
+    margin: 5% auto; }
+  .card_wrapper .project_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    color: #212121; }
+    .card_wrapper .project_details h3 {
+      font-size: 2rem;
+      font-family: 'Oswald', sans-serif;
+      margin: 0; }
+    .card_wrapper .project_details p {
+      font-size: 1.2rem; }
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    margin-right: 100vw; }
+  100% {
+    opacity: 1;
+    margin-right: 0; } }
 
 @font-face {
   font-family: 'Oswald';

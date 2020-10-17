@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, HashRouter, Switch } from 'react-router-dom';
+import { Route, HashRouter, browserHistory, BrowserRouter } from 'react-router-dom';
 //import components and pages here
 import Home from '../../pages/home.js';
 import Portfolio from '../../pages/portfolio.js';
@@ -11,7 +11,7 @@ import Footer from '../Footer/footer.js';
 const App = () => {
   return (
       
-    <HashRouter>
+    /*<HashRouter>
       <div className="content">
         <Navigation />
           <Route path="/" exact component={Home}/>
@@ -19,7 +19,16 @@ const App = () => {
           <Route path="/contact" component={Contact}/>
       </div>
       <Footer />
-    </HashRouter>
+    </HashRouter>*/
+    <BrowserRouter>
+      <div className="content">
+        <Navigation />
+          <Route path="/" exact component={Home}/>
+          <Route path="/portfolio" component={Portfolio}/>
+          <Route path="/contact" component={Contact}/>
+      </div>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
