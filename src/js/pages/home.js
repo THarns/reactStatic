@@ -1,6 +1,5 @@
 import React from 'react';
 import Footer from '../components/Footer/footer.js';
-import { Transition, animated } from 'react-spring/renderprops'
 
 import '../../scss/home.scss';
 import '../../scss/index.scss';

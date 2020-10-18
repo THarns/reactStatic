@@ -1,9 +1,11 @@
 import React from 'react';
 import './project_card.scss';
+import { motion,  AnimatePresence } from "framer-motion";
 
 const Project_card = (props) => {
     return (
-        <div className="card_wrapper">
+        <div className="card_wrapper" key={props.id}>
+
             <div className="project_image">
                 <img src={props.image} />
             </div>

@@ -7,13 +7,15 @@
     background:#fff;
     @include flex-center;
     justify-content:flex-start;
-    margin:60px 100vw 60px 0;
+    //margin:60px 100vw 60px 0;
+    margin-top:60px;
+    //margin-right:-100vw;
     z-index:2;
     flex-direction:column;
-    opacity:0;
+    opacity:1;
     flex-shrink:0;
-    animation:slideInLeft .75s ease forwards;
-    animation-delay:.5s;
+    //animation:slideInLeft .75s linear forwards;
+    //animation-delay:2s;
 
     .project_image {
         background-color:#212121;
@@ -68,7 +70,12 @@
 @keyframes slideInLeft {
     0% {
         opacity:0;
-        margin-right:100vw;
+        margin-right:-100vw;
+        //margin-left:auto;
+    }
+
+    75% {
+        opacity:1;
     }
 
     100% {

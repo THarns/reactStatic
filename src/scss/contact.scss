@@ -1,14 +1,115 @@
 @import './variables.scss';
 @import './fonts.scss';
 
-.contact_image {
 
-    .bg_container {
-        background-image:url('../resources/images/backgrounds/btterfly_mushrooms.jpg');
-        width:100vw;
-        height:100vh;
-        background-size:cover;
-        background-position:center;
-        position: relative;      
+.content {
+    .contact_image {
+        flex-direction:column;
+
+        .bg_container {
+            background-image:url('../resources/images/backgrounds/btterfly_mushrooms.jpg');
+            width:100vw;
+            min-height:auto;
+            background-size:cover;
+            background-position:50% 0%;
+            position: relative;
+            animation:zoomLarger 6s ease forwards;
+        }
+        
+        h1 {
+
+        }
+
+        form {
+            width:90vw;
+            max-width:550px;
+            min-height:500px;
+            height:auto;
+            margin:20px auto 20px auto;
+            @include flex-center;
+            justify-content:flex-start;
+            align-items:flex-start;
+            flex-direction:column;
+            overflow-x:hidden;
+            position:relative;
+            z-index:2;
+
+            .labelText_container {
+                width:100%;
+                min-height:80px;
+                @include flex-center;
+                justify-content:flex-start;
+                align-items:flex-start;
+                flex-direction:column;
+                margin:0 auto 0px auto;
+
+                label {
+                    min-width:50px;
+                    height:auto;
+                    margin:5px 0;
+                    font-size:1.2rem;
+                    font-family:"Oswald", sans-serif;
+                    color:red;
+                }
+
+                input[type=text] {
+                    width:100%;
+                    min-height:40px;
+                    font-size:1.2em;
+                    padding-left:5px;
+                }
+            }
+
+            .textarea_container {
+                width:100%;
+                min-height:100px;
+                display:flex;
+                justify-content:flex-start;
+                align-items:flex-start;
+                flex-direction:column;
+
+                label {
+                    min-width:50px;
+                    height:auto;
+                    margin:5px 0;
+                    font-size:1.2rem;
+                    font-family:"Oswald", sans-serif;
+                    color:red;
+                }
+
+                textarea {
+                    width:100%;
+                    min-height:30px;
+                    max-height:200px;
+                    font-size:1.6em;
+                    padding:5px;
+                }
+            }
+
+            input[type=submit] {
+                width:90vw;
+                max-width:200px;
+                height:40px;
+                background:red;
+                border:none;
+                margin:30px 0 0 auto;
+                padding:0;
+                align-self:flex-start;
+                color:#fff;
+                font-size:1.1rem;
+                font-family:"Oswald", sans-serif;
+                cursor:pointer;
+            }
+        }
+    }
+}
+
+@keyframes zoomLarger {
+    0% {
+        transform:scale(1.5);
+    }
+
+    100% {
+        transform:scale(1.75);
     }
 }

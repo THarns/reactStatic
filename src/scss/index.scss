@@ -31,14 +31,16 @@ body {
     /*Shared main landing styles for all pages. Background images are defined in their respective scss files*/
     .content {
         width:100vw;
-        min-height:calc(100vh + 120px);
+        //min-height:calc(100vh + 120px);
+        min-height:100vh;
         @include flex-center;
         align-items:flex-start;
         position:relative;
 
         .landing_wrapper {
             width:100vw;
-            min-height:calc(100vh + 120px);
+            //min-height:calc(100vh + 120px);
+            min-height:100vh;
             @include flex-center;
             align-items:flex-start;
             position:relative;
@@ -88,7 +90,7 @@ body {
 
 @keyframes zoomIn {
     0% {
-        transform:none;
+        transform:scale(1);
     }
 
     100% {

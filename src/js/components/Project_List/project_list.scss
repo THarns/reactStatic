@@ -1,0 +1,8 @@
+@import '../../../scss/variables.scss';
+
+.projects_list {
+    width:100vw;
+    min-height:auto;
+    @include flex-center;
+    flex-direction:column;
+}
