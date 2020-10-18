@@ -3,7 +3,8 @@
 .card_wrapper {
     width:90vw;
     max-width:400px;
-    min-height:60vh;
+    min-height:500px;
+    max-height:500px;
     background:#fff;
     @include flex-center;
     justify-content:flex-start;
@@ -82,5 +83,11 @@
         opacity:1;
         margin-right:auto;
         margin-left:auto;
+    }
+}
+
+@media (min-width:1000px) {
+    .card_wrapper {
+        margin:60px auto 0 auto;
     }
 }

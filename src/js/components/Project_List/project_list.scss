@@ -2,7 +2,15 @@
 
 .projects_list {
     width:100vw;
+    max-width:1800px;
     min-height:auto;
+    margin:0 auto;
     @include flex-center;
     flex-direction:column;
+}
+
+@media (min-width:1000px) {
+    .projects_list {
+        flex-direction:row;
+    }
 }
