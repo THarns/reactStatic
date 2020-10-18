@@ -8,7 +8,7 @@ const Portfolio = () => {
         {
             id:0,
             name:'Silhouettes vs The Sun',
-            tech:['HTML -', ' CSS -', ' JS -', ' PHP -', ' Wordpress -', ' Woocommerce -', ' Webpack'],
+            tech:['HTML -', ' CSS -', ' JS -', ' PHP -', ' Webpack -', ' Wordpress -', ' Woocommerce '],
             blurb:'Brochure style site done for a new album release for the artist Silhouettes vs The Sun.',
             github:'https://github.com/THarns/SVSTS2.0',
             image:''
@@ -26,7 +26,7 @@ const Portfolio = () => {
         {
             id:2,
             name:'Quake Update',
-            tech:['HTML', 'CSS', 'JS', 'ThreeJS', 'MYSQL'],
+            tech:['HTML -', ' CSS -', ' JS -', ' ThreeJS -', ' MYSQL'],
             blurb:'A full stack project consisting of a script to pull data from the USGS API and store it in a MYSQL database. A backend written in Node.JS to serve the data to the frontend which was written in React and uses ThreeJS to model all the quakes on a model Earth.',
             github:['https://github.com/THarns/QuakeDBUpdater', 'https://github.com/THarns/Quake-Dashboard-backend', 'https://github.com/THarns/Quake-Dashboard'],
             image:''
@@ -35,7 +35,7 @@ const Portfolio = () => {
         {
             id:3,
             name:'This portfolio site',
-            tech:['React', 'CSS', 'PHP', 'Webpack'],
+            tech:['React -', ' CSS -', ' PHP -', ' Webpack'],
             blurb:'I wanted to learn more about the React library and needed a porfolio site as well so I decided to do them in parallel.',
             github:'https://github.com/THarns/reactStatic',
             image:''

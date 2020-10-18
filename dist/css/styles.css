@@ -132,10 +132,15 @@ body {
   100% {
     transform: scale(1.15); } }
 
+@media (min-width: 1000px) {
+  .wrapper .content .landing_wrapper h1 {
+    font-size: 3.5rem; } }
+
 .card_wrapper {
   width: 90vw;
   max-width: 400px;
-  min-height: 60vh;
+  min-height: 500px;
+  max-height: 500px;
   background: #fff;
   display: flex;
   justify-content: center;
@@ -194,13 +199,23 @@ body {
     margin-right: auto;
     margin-left: auto; } }
 
+@media (min-width: 1000px) {
+  .card_wrapper {
+    margin: 60px auto 0 auto; } }
+
 .projects_list {
   width: 100vw;
+  max-width: 1800px;
   min-height: auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+
+@media (min-width: 1000px) {
+  .projects_list {
+    flex-direction: row; } }
 
 @font-face {
   font-family: 'Oswald';
@@ -225,10 +240,6 @@ body {
     background-size: cover;
     background-position: center;
     position: relative; }
-
-@media (max-width: 900px) {
-  .port_image {
-    flex-direction: row; } }
 
 @font-face {
   font-family: 'Oswald';

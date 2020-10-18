@@ -5,8 +5,12 @@ import './project_list.scss';
 const Project_List = (props) => {
     const projects = props.projects;
     const list_items = projects.map((project) => 
-        <Project_Card key={project.id} name={project.name} tech={project.tech} blurb={project.blurb} link={project.github} />
+        <Project_Card key={project.id} name={project.name} tech={project.tech} blurb={truncate(project.blurb, 100)} link={project.github} />
     );
+
+    function truncate(str, n){
+        return (str.length > n) ? str.substr(0, n-1) + String.fromCharCode(8230): str;
+    };
 
     return (
         <div className="projects_list">
