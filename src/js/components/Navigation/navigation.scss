@@ -23,4 +23,20 @@
         margin-top:3px;
         border-bottom:3px solid red;
     }
+
+    .dropPage {
+        animation:dropPage 1s ease forwards;
+    }
+}
+
+@keyframes dropPage {
+    0% {
+        opacity:1;
+        transform:scale(1)
+    }
+
+    100% {
+        opacity:0;
+        transform:scale(.8);
+    }
 }

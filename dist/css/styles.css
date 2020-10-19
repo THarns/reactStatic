@@ -1,3 +1,4 @@
+
 .footer_wrapper {
   width: 100vw;
   min-height: 160px;
@@ -150,7 +151,8 @@ body {
   z-index: 2;
   flex-direction: column;
   opacity: 1;
-  flex-shrink: 0; }
+  flex-shrink: 0;
+  position: relative; }
   .card_wrapper .project_image {
     background-color: #212121;
     width: 90%;
@@ -181,12 +183,21 @@ body {
       font-size: 1.1rem;
       font-family: 'Pridi', sans-serif; }
   .card_wrapper a {
-    position: relative;
-    bottom: 5px;
-    left: 30%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
     text-decoration: none;
     color: #212121;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    background: red;
+    width: auto;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 0 20px;
+    font-family: 'Pridi', sans-serif; }
 
 @keyframes slideInLeft {
   0% {
@@ -361,4 +372,14 @@ body {
   .navigation_wrapper .active_link {
     margin-top: 3px;
     border-bottom: 3px solid red; }
+  .navigation_wrapper .dropPage {
+    animation: dropPage 1s ease forwards; }
+
+@keyframes dropPage {
+  0% {
+    opacity: 1;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(0.8); } }
 

@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
  
 const Navigation = () => {
     return (
-       <div className="navigation_wrapper">
+      <div className="navigation_wrapper">
         <NavLink 
           to="/"
           exact
@@ -24,7 +24,7 @@ const Navigation = () => {
           className="nav_link"
           activeClassName="active_link"
         >Contact</NavLink>
-       </div>
+      </div>
     );
 }
  

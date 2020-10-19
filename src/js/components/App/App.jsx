@@ -1,32 +1,20 @@
 import React, { Component } from "react";
-import { Route, HashRouter, browserHistory, BrowserRouter } from 'react-router-dom';
+import { Route, withRouter, BrowserRouter } from 'react-router-dom';
 //import components and pages here
-import Home from '../../pages/home.js';
-import Portfolio from '../../pages/portfolio.js';
-import Contact from '../../pages/contact.js';
+import Page_Container from '../../components/Page_Container/Page_Container.js';
 import Navigation from '../Navigation/Navigation.js';
 import Footer from '../Footer/footer.js';
-//import { Transition, animated } from 'react-spring/renderprops';
 
 const App = () => {
   return (
-      
-    /*<HashRouter>
-      <div className="content">
-        <Navigation />
-          <Route path="/" exact component={Home}/>
-          <Route path="/portfolio" component={Portfolio}/>
-          <Route path="/contact" component={Contact}/>
-      </div>
-      <Footer />
-    </HashRouter>*/
     <BrowserRouter>
-      <div className="content">
-        <Navigation />
+      <Navigation />
+      {/*<div className="content">
           <Route path="/" exact component={Home}/>
           <Route path="/portfolio" component={Portfolio}/>
           <Route path="/contact" component={Contact}/>
-      </div>
+      </div>*/}
+      <Page_Container />
       <Footer />
     </BrowserRouter>
   );
