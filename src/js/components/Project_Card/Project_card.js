@@ -3,6 +3,7 @@ import './project_card.scss';
 import { motion,  AnimatePresence } from "framer-motion";
 
 const Project_card = (props) => {
+    console.log(props.image);
     return (
         <div className="card_wrapper" key={props.id}>
 

@@ -1,3 +1,19 @@
+.transition-group {
+  /*.fade-exit.fade-exit-done {
+        opacity:0;
+      }*/ }
+  .transition-group .fade-enter {
+    opacity: 0; }
+  .transition-group .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: all 400ms ease-in; }
+  .transition-group .fade-enter.fade-enter-done {
+    opacity: 1; }
+  .transition-group .fade-exit {
+    opacity: 1; }
+  .transition-group .fade-exit.fade-exit-active {
+    opacity: 0.5;
+    transition: all 200ms ease-in; }
 
 .footer_wrapper {
   width: 100vw;
@@ -97,8 +113,7 @@ body {
       justify-content: center;
       align-items: center;
       align-items: flex-start;
-      position: relative;
-      animation: fadeIn .75s ease forwards, slideIn .25s ease forwards; }
+      position: relative; }
       .wrapper .content .landing_wrapper h1 {
         margin: 100px 0 0 0;
         font-family: 'Oswald', sans-serif;
@@ -111,9 +126,7 @@ body {
       .wrapper .content .landing_wrapper .bg_container {
         position: absolute;
         top: 0;
-        left: 0;
-        animation: zoomIn 6s ease forwards;
-        animation-delay: 0.25s; }
+        left: 0; }
 
 @keyframes fadeIn {
   0% {
@@ -272,8 +285,7 @@ body {
     min-height: auto;
     background-size: cover;
     background-position: 50% 0%;
-    position: relative;
-    animation: zoomLarger 6s ease forwards; }
+    position: relative; }
   .content .contact_image form {
     width: 90vw;
     max-width: 550px;
