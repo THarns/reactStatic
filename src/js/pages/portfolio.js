@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-//import Project_card from '../components/Project_Card/Project_card.js';
+import Wrapper from '../components/Div/Div.js';
 import Project_List from '../components/Project_List/Project_List.js';
 import '../../scss/portfolio.scss';
 
@@ -37,20 +37,22 @@ const Portfolio = () => {
             name:'This portfolio site',
             tech:['React -', ' CSS -', ' PHP -', ' Webpack'],
             pic:'',
-            blurb:'I wanted to learn more about the React library and needed a porfolio site as well so I decided to do them in parallel.',
+            blurb:'Wanting to learn more about the React library and needing to make a porfolio site; I decided to do them in parallel.',
             github:'https://github.com/THarns/reactStatic',
             imgLink:null
         }
     ]);
 
     return (
-        <div className="landing_wrapper port_image">
-            <div className="bg_container"></div>
-            <h1>Websites</h1>
-            {/*<Project_card  name={projects[0].name} tech={projects[0].tech} blurb={projects[0].blurb} link={projects[0].github} />
-            <Project_card  name={projects[1].name} tech={projects[1].tech} blurb={projects[1].blurb} link={projects[1].github} />*/}
-            <Project_List projects={projects}/>
-            <h2>Logos</h2>
+        <div>
+            <div className="landing_wrapper port_image">
+                <div className="bg_container"></div>
+                <h1>Websites</h1>
+                <Project_List projects={projects}/>
+            </div>
+            <section>
+                <h2>Logos</h2>
+            </section>
         </div>
     );
 }

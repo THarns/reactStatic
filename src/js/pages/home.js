@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../components/Footer/footer.js';
-
+import Div from '../components/Div/Div.js';
 import '../../scss/home.scss';
 import '../../scss/index.scss';
 
