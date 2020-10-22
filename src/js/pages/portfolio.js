@@ -43,6 +43,32 @@ const Portfolio = () => {
         }
     ]);
 
+    const [logo, setLogo] = useState([
+        {
+            id:0,
+            name:'',
+            imgLink:''
+        },
+
+        {
+            id:1,
+            name:'',
+            imgLink:''
+        },
+
+        {
+            id:2,
+            name:'',
+            imgLink:''
+        },
+
+        {
+            id:3,
+            name:'',
+            imgLink:''
+        }
+    ]);
+
     return (
         <div>
             <div className="landing_wrapper port_image">
