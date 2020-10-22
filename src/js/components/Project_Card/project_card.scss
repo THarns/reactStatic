@@ -59,6 +59,11 @@
         p {
             font-size:1.1rem;
             font-family:'Pridi', sans-serif;
+            position:absolute;
+            width:90%;
+            bottom:57.5px;
+            left:50%;
+            transform:translateX(-50%);
         }
     }
 

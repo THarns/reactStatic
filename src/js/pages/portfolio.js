@@ -9,7 +9,7 @@ const Portfolio = () => {
             id:0,
             name:'Silhouettes vs The Sun',
             tech:['HTML -', ' CSS -', ' JS -', ' PHP -', ' Webpack -', ' Wordpress -', ' Woocommerce '],
-            blurb:'Brochure style site done for a new album release for the artist Silhouettes vs The Sun.',
+            blurb:'Brochure style site done with some custom elements and vector graphics for a new album release for the artist Silhouettes vs The Sun.',
             github:'https://github.com/THarns/SVSTS2.0',
             imgLink:'../../resources/images/project_images/svsts.png'
         },
@@ -18,7 +18,7 @@ const Portfolio = () => {
             id:1,
             name:'Noise In The Neighborhood',
             tech:['HTML -', ' CSS -', ' JS -', ' PHP -', ' Snap SVG -', ' GSAP -', ' Webpack'],
-            blurb:'Custom site done for a YouTube channel that produces live content monthly.',
+            blurb:'Custom static site with an animated SVG landing page done for a YouTube channel that produces live content monthly.',
             github:'',
             imgLink:'../../resources/images/project_images/nitn.png'
         },
