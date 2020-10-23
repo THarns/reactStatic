@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './navigation.scss';
 import { NavLink } from 'react-router-dom';
+import { ThemeContext } from '../Theme/Theme_Context.js';
  
 const Navigation = () => {
+  const { theme, toggle, dark } = React.useContext(ThemeContext);
 
   let listener = null
   const [scrollState, setScrollState] = useState("top");
@@ -32,25 +34,30 @@ const Navigation = () => {
 
     return (
       <div className="navigation_wrapper">
-        <div className="bg_layer" style={{ opacity: opacityVal }}></div>
+        <div className="bg_layer" style={{ opacity: opacityVal, backgroundColor:theme.backgroundColor }}></div>
         <NavLink 
           to="/"
           exact
           className="nav_link"
           activeClassName="active_link"
+          style={{color: theme.color}}
         >Home</NavLink>
 
         <NavLink 
           to="/portfolio"
           className="nav_link"
           activeClassName="active_link"
+          style={{color: theme.color}}
         >Portfolio</NavLink>
 
         <NavLink 
           to="/contact"
           className="nav_link"
           activeClassName="active_link"
+          style={{color: theme.color}}
         >Contact</NavLink>
+
+        <button type='button' className="toggle_dark_btn" onClick={toggle} style={{backgroundColor: theme.backgroundColor, color: theme.color, outline:'none', zIndex:999}}>Click Me</button>
       </div>
     );
 }

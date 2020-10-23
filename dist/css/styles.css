@@ -45,6 +45,14 @@
         height: 100%;
         width: auto; }
 
+.jsx_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  min-height: 100vh; }
+
 @font-face {
   font-family: 'Oswald';
   src: url(/dist/fonts/Oswald-Regular.ttf) format("truetype"); }
@@ -58,7 +66,6 @@
   src: url(/dist/fonts/Pridi-Bold.ttf) format("truetype"); }
 
 .landing_wrapper .bg_container {
-  background-image: url(/dist/550f3cbf5c46c79253a29295ceedea19.jpg);
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -150,14 +157,6 @@ body {
   .wrapper .content .landing_wrapper h1 {
     font-size: 3.5rem; } }
 
-.jsx_wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100vw;
-  min-height: 100vh; }
-
 .card_wrapper {
   width: 90vw;
   max-width: 400px;
@@ -206,7 +205,12 @@ body {
       font-size: 1rem; }
     .card_wrapper .project_details p {
       font-size: 1.1rem;
-      font-family: 'Pridi', sans-serif; }
+      font-family: 'Pridi', sans-serif;
+      position: absolute;
+      width: 90%;
+      bottom: 57.5px;
+      left: 50%;
+      transform: translateX(-50%); }
   .card_wrapper a {
     position: absolute;
     bottom: 20px;
@@ -265,17 +269,33 @@ body {
   font-family: 'Pridi-Bold';
   src: url(/dist/fonts/Pridi-Bold.ttf) format("truetype"); }
 
-.port_image {
+div .port_image {
   flex-direction: column; }
-  .port_image h1 {
+  div .port_image h1 {
     margin: 0; }
-  .port_image .bg_container {
-    background-image: url(/dist/ddd6b26d78a70c281a3aa6f74acd95ae.jpg);
+  div .port_image .bg_container {
     width: 100vw;
     height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative; }
+
+div section {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start; }
+  div section h2 {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center; }
 
 @font-face {
   font-family: 'Oswald';
@@ -292,7 +312,6 @@ body {
 .content .contact_image {
   flex-direction: column; }
   .content .contact_image .bg_container {
-    background-image: url(/dist/545bf9ba23c239de6aeceddc9390c029.jpg);
     width: 100vw;
     min-height: auto;
     background-size: cover;
@@ -386,16 +405,28 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  background-color: rgba(22, 22, 22, 0);
+  transition: all .25s ease forwards;
   z-index: 99999999; }
+  .navigation_wrapper .bg_layer {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #212121;
+    opacity: 0; }
   .navigation_wrapper .nav_link {
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
     font-family: 'Oswald', sans-serif;
-    padding: 5px 10px; }
+    padding: 5px 10px;
+    z-index: 2;
+    height: 42.5px; }
   .navigation_wrapper .active_link {
-    margin-top: 3px;
-    border-bottom: 3px solid red; }
+    border-bottom: 4px solid red; }
   .navigation_wrapper .dropPage {
     animation: dropPage 1s ease forwards; }
 

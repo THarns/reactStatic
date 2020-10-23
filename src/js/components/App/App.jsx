@@ -4,11 +4,16 @@ import { Route, withRouter, BrowserRouter } from 'react-router-dom';
 import Page_Container from '../../components/Page_Container/Page_Container.js';
 import Navigation from '../Navigation/Navigation.js';
 import Footer from '../Footer/footer.js';
+import { ThemeContext } from '../Theme/Theme_Context.js';
 
 const App = () => {
+  const { theme, toggle, dark } = React.useContext(ThemeContext);
+
   return (
     <BrowserRouter>
-      <Navigation />
+      <Navigation>
+          
+      </Navigation>
       {/*<div className="content">
           <Route path="/" exact component={Home}/>
           <Route path="/portfolio" component={Portfolio}/>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Wrapper from '../components/Div/Div.js';
 import Project_List from '../components/Project_List/Project_List.js';
 import '../../scss/portfolio.scss';
+import { ThemeContext } from '../components/Theme/Theme_Context.js';
 
 const Portfolio = () => {
     const [projects, setProject] = useState([
@@ -69,15 +70,17 @@ const Portfolio = () => {
         }
     ]);
 
+    const { theme, toggle, dark } = React.useContext(ThemeContext);
+
     return (
         <div>
             <div className="landing_wrapper port_image">
                 <div className="bg_container"></div>
-                <h1>Websites</h1>
+                <h1 style={{color:theme.color}}>Websites</h1>
                 <Project_List projects={projects}/>
             </div>
             <section>
-                <h2>Logos</h2>
+                <h2 style={{color:theme.color}}>Logos</h2>
             </section>
         </div>
     );
