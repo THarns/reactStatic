@@ -80,7 +80,7 @@ const Portfolio = () => {
                 <Project_List projects={projects}/>
             </div>
             <section>
-                <h2 style={{color:theme.color}}>Logos</h2>
+                <h2 style={{color:theme.color}}>Logos &amp; WordMarks</h2>
             </section>
         </div>
     );

@@ -1,14 +1,16 @@
 import React from 'react';
 import Footer from '../components/Footer/footer.js';
-
+import { ThemeContext } from '../components/Theme/Theme_Context.js';
 import '../../scss/contact.scss';
 import '../../scss/index.scss';
 
 const Contact = () => {
+  const { theme, toggle, dark } = React.useContext(ThemeContext);
+
     return (
         <div className="landing_wrapper contact_image">
             <div className="bg_container"></div>
-            <h1>Contact</h1>
+            <h1 style={{color:theme.color}}>Contact</h1>
             <form name="form" method="post" action="form_send.php">
                 <div className="labelText_container">
                   <label htmlFor="name">Name</label>
@@ -22,7 +24,7 @@ const Contact = () => {
                   <label htmlFor="message">Message</label>
                   <textarea  name="visitor_message" maxLength="1000" cols="39" rows="10"></textarea>
                 </div>
-                <input type="submit" className="submit_contact_form_btn" value="Send Message" name="submit" />
+                <input type="submit" className="submit_contact_form_btn" value="Send Message" name="submit" style={{color:theme.color}}/>
             </form>
         </div>
     );

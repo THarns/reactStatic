@@ -5,13 +5,15 @@ const themes = {
     backgroundColor: '#212121',
     color: 'white',
     oppositeBG: '#fffcfc',
-    oppositeColor: '#212121'
+    oppositeColor: '#212121',
+    btnImg:'url(../../../resources/icons/dark_mode/sun.svg)'
   },
   light: {
     backgroundColor: '#fffcfc',
     color: '#212121',
     oppositeBG: '#212121',
-    oppositeColor: 'white'
+    oppositeColor: 'white',
+    btnImg:'url(../../../resources/icons/dark_mode/moon.svg)'
   }
 }
 
