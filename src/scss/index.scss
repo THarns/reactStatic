@@ -12,57 +12,46 @@ body {
     overflow-x:hidden;
 }
 
-.wrapper {
-    width:100vw;
+#root {
     min-height:100vh;
-    display:flex;
-    justify-content:flex-start;
-    align-items:center;
-    flex-direction:column;
-    margin:0;
-    flex-shrink:0;
-    overflow:hidden;
+    background-color:#000;
+}
 
-    #root {
-        min-height:100vh;
-    }
+/*Shared main landing styles for all pages. Background images are defined in their respective scss files*/
+.content {
+    width:100vw;
+    //min-height:calc(100vh + 120px);
+    min-height:100vh;
+    @include flex-center;
+    align-items:flex-start;
+    position:relative;
 
-    /*Shared main landing styles for all pages. Background images are defined in their respective scss files*/
-    .content {
+    .landing_wrapper {
         width:100vw;
         //min-height:calc(100vh + 120px);
         min-height:100vh;
         @include flex-center;
         align-items:flex-start;
         position:relative;
+        //animation:fadeIn .75s ease forwards, slideIn .25s ease forwards;
 
-        .landing_wrapper {
-            width:100vw;
-            //min-height:calc(100vh + 120px);
-            min-height:100vh;
-            @include flex-center;
-            align-items:flex-start;
-            position:relative;
-            //animation:fadeIn .75s ease forwards, slideIn .25s ease forwards;
+        h1 {
+            margin:120px 0 20px 0;
+            font-family:'Oswald', sans-serif;
+            font-size:3rem;
+            color:#fff;
+            position: relative;
+            width:100%;
+            height:auto;
+            text-align:center;
+        }
 
-            h1 {
-                margin:100px 0 0 0;
-                font-family:'Oswald', sans-serif;
-                font-size:2.2rem;
-                color:#fff;
-                position: relative;
-                width:100%;
-                height:auto;
-                text-align:center;
-            }
-
-            .bg_container {
-                position:absolute;
-                top:0;
-                left:0;
-                //animation:zoomIn 6s ease forwards;
-                //animation-delay:0.5s;
-            }
+        .bg_container {
+            position:absolute;
+            top:0;
+            left:0;
+            //animation:zoomIn 6s ease forwards;
+            //animation-delay:0.5s;
         }
     }
 }
@@ -98,12 +87,10 @@ body {
 }
 
 @media (min-width:1000px) {
-    .wrapper {
-        .content {
-            .landing_wrapper {
-                h1 {
-                    font-size:3.5rem;
-                }
+    .content {
+        .landing_wrapper {
+            h1 {
+                font-size:3.5rem;
             }
         }
     }

@@ -57,7 +57,7 @@ const Navigation = () => {
           style={{color: theme.color}}
         >Contact</NavLink>
 
-        <button type='button' className="toggle_dark_btn" onClick={toggle} style={{backgroundColor: theme.backgroundColor, color: theme.color, outline:'none', zIndex:999}}>Click Me</button>
+        <button type='button' className="toggle_dark_btn" onClick={toggle} style={{backgroundColor: 'transparent', color: theme.color, outline:'none', zIndex:999}}>Click Me</button>
       </div>
     );
 }

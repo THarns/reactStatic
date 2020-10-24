@@ -91,21 +91,19 @@ body {
   margin: 0;
   overflow-x: hidden; }
 
-.wrapper {
+#root {
+  min-height: 100vh; }
+
+/*Shared main landing styles for all pages. Background images are defined in their respective scss files*/
+.content {
   width: 100vw;
   min-height: 100vh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin: 0;
-  flex-shrink: 0;
-  background-color: #000;
-  overflow: hidden;
-  /*Shared main landing styles for all pages. Background images are defined in their respective scss files*/ }
-  .wrapper #root {
-    min-height: 100vh; }
-  .wrapper .content {
+  align-items: flex-start;
+  position: relative; }
+  .content .landing_wrapper {
     width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -113,27 +111,19 @@ body {
     align-items: center;
     align-items: flex-start;
     position: relative; }
-    .wrapper .content .landing_wrapper {
-      width: 100vw;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-items: flex-start;
-      position: relative; }
-      .wrapper .content .landing_wrapper h1 {
-        margin: 100px 0 0 0;
-        font-family: 'Oswald', sans-serif;
-        font-size: 2.2rem;
-        color: #fff;
-        position: relative;
-        width: 100%;
-        height: auto;
-        text-align: center; }
-      .wrapper .content .landing_wrapper .bg_container {
-        position: absolute;
-        top: 0;
-        left: 0; }
+    .content .landing_wrapper h1 {
+      margin: 100px 0 40px 0;
+      font-family: 'Oswald', sans-serif;
+      font-size: 3rem;
+      color: #fff;
+      position: relative;
+      width: 100%;
+      height: auto;
+      text-align: center; }
+    .content .landing_wrapper .bg_container {
+      position: absolute;
+      top: 0;
+      left: 0; }
 
 @keyframes fadeIn {
   0% {
@@ -180,7 +170,8 @@ body {
     max-height: 200px;
     margin: 5% auto;
     flex-shrink: 0;
-    overflow: hidden; }
+    overflow: hidden;
+    border: none; }
     .card_wrapper .project_image img {
       width: 100%;
       height: 100%;
@@ -310,13 +301,17 @@ div section {
   src: url(/dist/fonts/Pridi-Bold.ttf) format("truetype"); }
 
 .content .contact_image {
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 100vh; }
   .content .contact_image .bg_container {
     width: 100vw;
-    min-height: auto;
+    max-height: 100vh;
     background-size: cover;
     background-position: 50% 0%;
     position: relative; }
+  .content .contact_image .contact_heading {
+    margin-top: -40px; }
   .content .contact_image form {
     width: 90vw;
     max-width: 550px;
@@ -429,6 +424,13 @@ div section {
     border-bottom: 4px solid red; }
   .navigation_wrapper .dropPage {
     animation: dropPage 1s ease forwards; }
+  .navigation_wrapper .toggle_dark_btn {
+    border: none;
+    width: auto;
+    height: 25px;
+    padding: 0 15px;
+    margin: 0 2% 0 auto;
+    font-family: 'Oswald', sans-serif; }
 
 @keyframes dropPage {
   0% {

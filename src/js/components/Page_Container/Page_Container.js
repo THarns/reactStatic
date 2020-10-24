@@ -14,7 +14,7 @@ const Page_Container = ( {location} ) => {
         <TransitionGroup className="transition-group">
             <CSSTransition
             key={location.key}
-            timeout={{ enter: 300, exit: 300 }}
+            timeout={{ enter: 200, exit: 200 }}
             classNames="fade"
             >
                 <div className="content" style={{backgroundColor:theme.backgroundColor, color:theme.color}}>

@@ -10,7 +10,7 @@ const Contact = () => {
     return (
         <div className="landing_wrapper contact_image">
             <div className="bg_container"></div>
-            <h1 style={{color:theme.color}}>Contact</h1>
+            <h1 className="contact_heading" style={{color:theme.color}}>Contact</h1>
             <form name="form" method="post" action="form_send.php">
                 <div className="labelText_container">
                   <label htmlFor="name">Name</label>
