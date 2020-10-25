@@ -6,14 +6,18 @@ const themes = {
     color: 'white',
     oppositeBG: '#fffcfc',
     oppositeColor: '#212121',
-    btnImg:'url(../../../resources/icons/dark_mode/sun.svg)'
+    btnImg:'url(../../../resources/icons/dark_mode/sun.svg)',
+    msg:'Light Mode',
+    cardBorder:'none'
   },
   light: {
     backgroundColor: '#fffcfc',
     color: '#212121',
     oppositeBG: '#212121',
     oppositeColor: 'white',
-    btnImg:'url(../../../resources/icons/dark_mode/moon.svg)'
+    btnImg:'url(../../../resources/icons/dark_mode/moon2.svg)',
+    msg:'Dark Mode',
+    cardBorder:'1px solid #212121'
   }
 }
 

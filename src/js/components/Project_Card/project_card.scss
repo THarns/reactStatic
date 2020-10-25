@@ -8,14 +8,13 @@
     background:#fff;
     @include flex-center;
     justify-content:flex-start;
-    //margin:60px 100vw 60px 0;
     margin-top:60px;
-    //margin-right:-100vw;
     z-index:2;
     flex-direction:column;
     opacity:1;
     flex-shrink:0;
     position:relative;
+    border:1px solid #212121;
     //animation:slideInLeft .75s linear forwards;
     //animation-delay:2s;
 

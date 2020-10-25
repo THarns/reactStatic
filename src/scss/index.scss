@@ -25,6 +25,7 @@ body {
     @include flex-center;
     align-items:flex-start;
     position:relative;
+    transition:all .25s linear;
 
     .landing_wrapper {
         width:100vw;

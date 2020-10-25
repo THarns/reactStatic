@@ -40,7 +40,8 @@
     .footer_wrapper ul li {
       width: 40px;
       height: 40px;
-      margin: 0 10px 0 0; }
+      margin: 0 10px 0 0;
+      cursor: pointer; }
       .footer_wrapper ul li img {
         height: 100%;
         width: auto; }
@@ -92,7 +93,8 @@ body {
   overflow-x: hidden; }
 
 #root {
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #000; }
 
 /*Shared main landing styles for all pages. Background images are defined in their respective scss files*/
 .content {
@@ -112,7 +114,7 @@ body {
     align-items: flex-start;
     position: relative; }
     .content .landing_wrapper h1 {
-      margin: 100px 0 40px 0;
+      margin: 120px 0 20px 0;
       font-family: 'Oswald', sans-serif;
       font-size: 3rem;
       color: #fff;
@@ -144,7 +146,7 @@ body {
     transform: scale(1.15); } }
 
 @media (min-width: 1000px) {
-  .wrapper .content .landing_wrapper h1 {
+  .content .landing_wrapper h1 {
     font-size: 3.5rem; } }
 
 .card_wrapper {
@@ -310,14 +312,12 @@ div section {
     background-size: cover;
     background-position: 50% 0%;
     position: relative; }
-  .content .contact_image .contact_heading {
-    margin-top: -40px; }
   .content .contact_image form {
     width: 90vw;
     max-width: 550px;
     min-height: 500px;
     height: auto;
-    margin: 20px auto 20px auto;
+    margin: 20px auto 135px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -426,10 +426,12 @@ div section {
     animation: dropPage 1s ease forwards; }
   .navigation_wrapper .toggle_dark_btn {
     border: none;
-    width: auto;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     padding: 0 15px;
-    margin: 0 2% 0 auto;
+    margin: 0 5% 0 auto;
+    border: 1px solid red;
+    background-size: cover;
     font-family: 'Oswald', sans-serif; }
 
 @keyframes dropPage {

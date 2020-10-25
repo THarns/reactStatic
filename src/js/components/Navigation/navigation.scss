@@ -45,11 +45,24 @@
 
     .toggle_dark_btn {
         border:none;
-        width:auto;
-        height:25px;
+        width:30px;
+        height:30px;
         padding:0 15px;
-        margin:0 2% 0 auto;
+        margin:-17.5px 2.5% 0 auto;
+        background-size:cover;
         font-family:'Oswald', sans-serif;
+        position:relative;
+        cursor:pointer;
+
+        p {
+            position:absolute;
+            width:80px;
+            margin:0;
+            bottom:-17.5px;
+            left:50%;
+            font-size:.75rem;
+            transform:translateX(-50%);
+        }
     }
 }
 
