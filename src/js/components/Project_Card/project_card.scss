@@ -21,18 +21,21 @@
     .project_image {
         background-color:#212121;
         width:90%;
-        min-height:200px;
+        height:200px;
         max-height:200px;
         margin:5% auto;
         flex-shrink:0;
         overflow:hidden;
+        @include flex-center;
         border:none;
+        transition: transform .2s; /* Animation */
 
         img {
-            width:100%;
+            width:auto;
             height:100%;
             margin:0 auto;
             z-index:99;
+            transition: transform .5s; /* Animation */
         }
     }
 
@@ -54,6 +57,35 @@
             margin:10px 0 5px 0;
             font-family:'Pridi', sans-serif;
             font-size:1rem;
+        }
+
+        ul {
+            width:100%;
+            height:auto;
+            max-height:100px;
+            display:flex;
+            flex-direction:row;
+            justify-content:flex-start;
+            align-items:center;
+            list-style-type:none;
+            padding:0;
+
+            li {
+                width:45px;
+                height:40px;
+                margin:0 7.5px;
+                padding:0;
+                @include flex-center;
+
+                img {
+                    width:auto;
+                    max-width:45px;
+                    height:auto;
+                    max-height:40px;
+                    margin:auto;
+                    display:block;
+                }
+            }
         }
 
         p {
@@ -81,6 +113,15 @@
         color:#fff;
         padding:0 20px;
         font-family:'Pridi', sans-serif;
+        z-index:99;
+        cursor:pointer;
+    }
+
+    .hidden_container {
+        display:none;
+        width:0;
+        height:0;
+        @include flex-center;
     }
 }
 
@@ -105,5 +146,22 @@
 @media (min-width:1000px) {
     .card_wrapper {
         margin:60px auto 0 auto;
+
+        .project_details {
+            ul {
+                li {
+                    width:55px;
+                    height:40px;
+                    margin:0 7.5px;
+
+                    img {
+                        width:auto;
+                        max-width:55px;
+                        height:auto;
+                        max-height:40px;
+                    }
+                }
+            }
+        }
     }
 }

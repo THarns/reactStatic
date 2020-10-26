@@ -23,7 +23,6 @@ const Navigation = () => {
         //console.log('above');
         setScrollState('top');
         setOpacityVal(Math.min(scrolled / 100));
-        console.log(scrolled + ' ' + opacityVal);
       }
     });
 

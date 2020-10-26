@@ -5,6 +5,14 @@ import { ThemeContext } from '../Theme/Theme_Context.js';
 
 const Project_card = (props) => {
     const { theme, toggle, dark } = React.useContext(ThemeContext);
+    let techs = props.tech;
+    let listImgs = techs.map((tech, idx) => 
+        <li key={idx}><img src={tech}/></li>
+    );
+
+    function openProject(p) {
+        console.log('clicked ' + p.name);
+    }
 
     return (
         <div className="card_wrapper" key={props.id} style={{}}>
@@ -14,10 +22,14 @@ const Project_card = (props) => {
             </div>
             <div className="project_details" style={{}}>
                 <h3>{props.name}</h3>
-                <h4>{props.tech}</h4>
+                {/*<h4>{props.tech}</h4>*/}
+                <ul>{listImgs}</ul>
                 <p>{props.blurb}</p>
             </div>
-            <a href="#">See more...</a>
+            <a onClick={ () => openProject(props) }>See more...</a>
+            <div className="hidden_container">
+
+            </div>
         </div>
     );
 }

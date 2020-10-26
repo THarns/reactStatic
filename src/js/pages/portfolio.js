@@ -9,7 +9,7 @@ const Portfolio = () => {
         {
             id:0,
             name:'Silhouettes vs The Sun',
-            tech:['HTML -', ' CSS -', ' JS -', ' PHP -', ' Webpack -', ' Wordpress -', ' Woocommerce '],
+            tech:['../../resources/images/logos/web_tech/html5_no_text.svg', '../../resources/images/logos/web_tech/sass.svg', ' ../../resources/images/logos/web_tech/JS_logo.svg', '../../resources/images/logos/web_tech/php.svg', '../../resources/images/logos/web_tech/webpack-icon.svg', '../../resources/images/logos/web_tech/woocommerce.svg'],
             blurb:'Brochure style site done with some custom elements and vector graphics for a new album release for the artist Silhouettes vs The Sun.',
             github:'https://github.com/THarns/SVSTS2.0',
             imgLink:'../../resources/images/project_images/svsts.png'
@@ -18,7 +18,7 @@ const Portfolio = () => {
         {
             id:1,
             name:'Noise In The Neighborhood',
-            tech:['HTML -', ' CSS -', ' JS -', ' PHP -', ' Snap SVG -', ' GSAP -', ' Webpack'],
+            tech:['../../resources/images/logos/web_tech/html5_no_text.svg', '../../resources/images/logos/web_tech/sass.svg', ' ../../resources/images/logos/web_tech/JS_logo.svg','../../resources/images/logos/web_tech/php.svg', '../../resources/images/logos/web_tech/snapsvg.svg', '../../resources/images/logos/web_tech/webpack-icon.svg'],
             blurb:'Custom static site with an animated SVG landing page done for a YouTube channel that produces live content monthly.',
             github:'',
             imgLink:'../../resources/images/project_images/nitn.png'
@@ -27,7 +27,7 @@ const Portfolio = () => {
         {
             id:2,
             name:'Quake Update',
-            tech:['HTML -', ' CSS -', ' JS -', ' ThreeJS -', ' MYSQL'],
+            tech:['../../resources/images/logos/web_tech/html5_no_text.svg', '../../resources/images/logos/web_tech/sass.svg', ' ../../resources/images/logos/web_tech/JS_logo.svg', '../../resources/images/logos/web_tech/threejsText.svg', '../../resources/images/logos/web_tech/mysql.svg'],
             blurb:'A full stack project consisting of a script to pull data from the USGS API and store it in a MYSQL database. A backend written in Node.JS to serve the data to the frontend which was written in React and uses ThreeJS to model all the quakes on a model Earth.',
             github:['https://github.com/THarns/QuakeDBUpdater', 'https://github.com/THarns/Quake-Dashboard-backend', 'https://github.com/THarns/Quake-Dashboard'],
             imgLink:'../../resources/images/project_images/VScode_terminal.png'
@@ -36,7 +36,7 @@ const Portfolio = () => {
         {
             id:3,
             name:'This portfolio site',
-            tech:['React -', ' CSS -', ' PHP -', ' Webpack'],
+            tech:['../../resources/images/logos/web_tech/react.svg', '../../resources/images/logos/web_tech/react-router.svg', '../../resources/images/logos/web_tech/sass.svg', '../../resources/images/logos/web_tech/php.svg', '../../resources/images/logos/web_tech/webpack-icon.svg', '../../resources/images/logos/web_tech/snapsvg.svg'],
             pic:'',
             blurb:'Wanting to learn more about the React library and needing to make a porfolio site; I decided to do them in parallel.',
             github:'https://github.com/THarns/reactStatic',

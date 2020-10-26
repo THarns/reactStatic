@@ -48,7 +48,7 @@
         width:30px;
         height:30px;
         padding:0 15px;
-        margin:-17.5px 2.5% 0 auto;
+        margin:-17.5px 5% 0 auto;
         background-size:cover;
         font-family:'Oswald', sans-serif;
         position:relative;
@@ -62,6 +62,7 @@
             left:50%;
             font-size:.75rem;
             transform:translateX(-50%);
+            font-family:'Oswald', sans-serif;
         }
     }
 }
@@ -75,5 +76,13 @@
     100% {
         opacity:0;
         transform:scale(.8);
+    }
+}
+
+@media (min-width:1000px) {
+    .navigation_wrapper {
+        .toggle_dark_btn {
+            margin-right:2.5%;
+        }
     }
 }
