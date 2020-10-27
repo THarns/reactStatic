@@ -253,7 +253,9 @@ body {
     align-items: center;
     color: #fff;
     padding: 0 20px;
-    font-family: 'Pridi', sans-serif; }
+    font-family: 'Pridi', sans-serif;
+    z-index: 99;
+    cursor: pointer; }
   .card_wrapper .hidden_container {
     display: none;
     width: 0;

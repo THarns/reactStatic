@@ -10,13 +10,28 @@ const Project_card = (props) => {
         <li key={idx}><img src={tech}/></li>
     );
 
-    function openProject(p) {
-        console.log('clicked ' + p.name);
+    function handleClick(e, data) {
+        let parent = e.target.parentNode;
+        let hidden = parent.childNodes;
+        console.log(hidden);
+        hidden[4].classList.add('expand_hidden');
+        parent.classList.add('expand_card');
+
+        let closeBtns = document.getElementsByClassName('close');
+        hidden[0].style.display = 'block';
+        hidden[1].style.marginTop = '60px';
+        for(let i = 0; i< closeBtns.length; i++) {
+            closeBtns[i].addEventListener('click', ()=> {
+                parent.classList.remove('expand_card');
+                closeBtns[i].style.display = 'none';
+                hidden[1].style.marginTop = '5%';
+            });
+        }
     }
 
     return (
         <div className="card_wrapper" key={props.id} style={{}}>
-
+            <div className="close"><p>&times;</p></div>
             <div className="project_image">
                 <img src={props.imgLink} />
             </div>
@@ -26,7 +41,7 @@ const Project_card = (props) => {
                 <ul>{listImgs}</ul>
                 <p>{props.blurb}</p>
             </div>
-            <a onClick={ () => openProject(props) }>See more...</a>
+            <a onClick={ ((e) => handleClick(e, props)) }>See more...</a>
             <div className="hidden_container">
 
             </div>

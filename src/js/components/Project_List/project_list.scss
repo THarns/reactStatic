@@ -7,10 +7,12 @@
     margin:0 auto;
     @include flex-center;
     flex-direction:column;
+    flex-grow:0;
 }
 
 @media (min-width:1000px) {
     .projects_list {
         flex-direction:row;
+        max-height:500px;
     }
 }
