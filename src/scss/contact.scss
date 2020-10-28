@@ -4,30 +4,14 @@
 
 .content {
     .landing_wrapper {
-        
-    }
-
-    .contact_image {
         flex-direction:column;
-        justify-content:flex-start;
-        max-height:100vh;
-
-        .bg_container {
-            //background-image:url('../resources/images/backgrounds/btterfly_mushrooms.jpg');
-            width:100vw;
-            max-height:100vh;
-            background-size:cover;
-            background-position:50% 0%;
-            position: relative;
-            //animation:zoomLarger 6s ease forwards;
-        }
 
         form {
             width:90vw;
             max-width:550px;
             min-height:500px;
             height:auto;
-            margin:20px auto 135px auto;
+            margin:20px auto 20px auto;
             @include flex-center;
             justify-content:flex-start;
             align-items:flex-start;

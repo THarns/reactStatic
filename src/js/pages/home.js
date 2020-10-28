@@ -8,9 +8,7 @@ const Home = () => {
     return (
         <div className="landing_wrapper">
             <div className="bg_container"></div>
-            <div className="home_content">
-                <h1>Front</h1>
-            </div>
+            <h1>Front</h1>
         </div>
     );
 }

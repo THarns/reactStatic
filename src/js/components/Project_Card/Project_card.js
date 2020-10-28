@@ -30,7 +30,7 @@ const Project_card = (props) => {
     }
 
     return (
-        <div className="card_wrapper" key={props.id} style={{}}>
+        <motion.div className="card_wrapper" key={props.id} style={{}}>
             <div className="close"><p>&times;</p></div>
             <div className="project_image">
                 <img src={props.imgLink} />
@@ -45,7 +45,7 @@ const Project_card = (props) => {
             <div className="hidden_container">
 
             </div>
-        </div>
+        </motion.div>
     );
 }
 

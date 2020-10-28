@@ -82,7 +82,7 @@ const Portfolio = () => {
 
     return (
         <div>
-            <div className="landing_wrapper port_image">
+            <div className="landing_wrapper">
                 <div className="bg_container"></div>
                 <h1 style={{color:theme.color}}>Websites</h1>
                 <Project_List projects={projects}/>

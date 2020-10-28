@@ -1,39 +1,29 @@
 @import './variables.scss';
 @import './fonts.scss';
 
-div {
-    .port_image {
-        flex-direction:column;
-
-        h1 {
-            margin:0;
+.content {
+    div {
+        .landing_wrapper {
+            
         }
-
-        .bg_container {
-            //background-image:url('../resources/images/backgrounds/sand_dunes.jpg');
+        
+        section {
             width:100vw;
-            height:100vh;
-            background-size:cover;
-            background-position:center;
-            position: relative; 
-        }
-    }
+            min-height:100vh;
+            @include flex-center;
+            justify-content:flex-start;
+            background-color:$primary-lighter;
 
-    section {
-        width:100vw;
-        min-height:100vh;
-        @include flex-center;
-        justify-content:flex-start;
-
-        h2 {
-            color:#fff;
-            font-family:'Oswald', sans-serif;
-            font-size:3rem;
-            color:#fff;
-            position: relative;
-            width:100%;
-            height:auto;
-            text-align:center;
+            h2 {
+                color:#fff;
+                font-family:'Oswald', sans-serif;
+                font-size:3rem;
+                color:#fff;
+                position: relative;
+                width:100%;
+                height:auto;
+                text-align:center;
+            }
         }
     }
 }

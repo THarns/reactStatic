@@ -32,8 +32,9 @@ body {
         //min-height:calc(100vh + 120px);
         min-height:100vh;
         @include flex-center;
-        align-items:flex-start;
+        justify-content:flex-start;
         position:relative;
+        flex-direction:column;
         //animation:fadeIn .75s ease forwards, slideIn .25s ease forwards;
 
         h1 {
@@ -49,8 +50,13 @@ body {
 
         .bg_container {
             position:absolute;
-            top:0;
+            bottom:0;
             left:0;
+            background-image:url('../resources/images/backgrounds/bg_svg_shape10.svg');
+            background-size:cover;
+            background-position:center;
+            width:100vw;
+            height:100vh;
             //animation:zoomIn 6s ease forwards;
             //animation-delay:0.5s;
         }
@@ -92,6 +98,7 @@ body {
         .landing_wrapper {
             h1 {
                 font-size:3.5rem;
+                margin-top:200px;
             }
         }
     }
