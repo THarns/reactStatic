@@ -5,7 +5,7 @@ import './project_list.scss';
 const Project_List = (props) => {
     const projects = props.projects;
     const list_items = projects.map((project, idx) => 
-        <Project_Card key={idx} name={project.name} tech={project.tech} blurb={truncate(project.blurb, 100)} link={project.github} imgLink={project.imgLink} />
+        <Project_Card key={idx} name={project.name} tech={project.tech} blurb={truncate(project.blurb, 100)} link={project.github} imgLink={project.imgLink} delayLength={project.delayLength} pos={project.pos} expanded={project.expanded} />
     );
 
     function truncate(str, n){

@@ -9,12 +9,19 @@ const Portfolio = () => {
         {
             id:0,
             name:'Silhouettes vs The Sun',
-            tech:['../../resources/images/logos/web_tech/html5_no_text.svg', '../../resources/images/logos/web_tech/sass.svg', ' ../../resources/images/logos/web_tech/JS_logo.svg', '../../resources/images/logos/web_tech/php.svg', '../../resources/images/logos/web_tech/webpack-icon.svg', '../../resources/images/logos/web_tech/woocommerce.svg'],
+            tech:['../../resources/images/logos/web_tech/html5_no_text.svg', '../../resources/images/logos/web_tech/sass.svg', ' ../../resources/images/logos/web_tech/JS_logo.svg', '../../resources/images/logos/web_tech/php.svg', '../../resources/images/logos/web_tech/woocommerce.svg', '../../resources/images/logos/web_tech/webpack-icon.svg'],
             blurb:'Brochure style site done with some custom elements and vector graphics for a new album release for the artist Silhouettes vs The Sun.',
             longDescription:'',
             github:'https://github.com/THarns/SVSTS2.0',
             imgLink:'../../resources/images/project_images/svsts.png',
-            pos:'0'
+            delayLength:0,
+            pos:0,
+            expanded:{
+                width:'100vw',
+                maxWidth:'100vw',
+                height:'100vh',
+                maxHeight:'100vh'
+            }
         },
 
         {
@@ -25,30 +32,51 @@ const Portfolio = () => {
             longDescription:'',
             github:'',
             imgLink:'../../resources/images/project_images/nitn.png',
-            pos:'1'
+            delayLength:.25,
+            pos:1,
+            expanded:{
+                width:'100vw',
+                maxWidth:'100vw',
+                height:'100vh',
+                maxHeight:'100vh'
+            }
         },
 
         {
             id:2,
             name:'Quake Update',
-            tech:['../../resources/images/logos/web_tech/html5_no_text.svg', '../../resources/images/logos/web_tech/sass.svg', ' ../../resources/images/logos/web_tech/JS_logo.svg', '../../resources/images/logos/web_tech/threejsText.svg', '../../resources/images/logos/web_tech/mysql.svg'],
+            tech:['../../resources/images/logos/web_tech/html5_no_text.svg', '../../resources/images/logos/web_tech/sass.svg', ' ../../resources/images/logos/web_tech/JS_logo.svg', '../../resources/images/logos/web_tech/threejsText.svg', '../../resources/images/logos/web_tech/mysql.svg', '../../resources/images/logos/web_tech/webpack-icon.svg'],
             blurb:'A full stack project consisting of a script to pull data from the USGS API and store it in a MYSQL database. A backend written in Node.JS to serve the data to the frontend which was written in React and uses ThreeJS to model all the quakes on a model Earth.',
             longDescription:'',
             github:['https://github.com/THarns/QuakeDBUpdater', 'https://github.com/THarns/Quake-Dashboard-backend', 'https://github.com/THarns/Quake-Dashboard'],
             imgLink:'../../resources/images/project_images/VScode_terminal.png',
-            pos:'2'
+            delayLength:.5,
+            pos:2,
+            expanded:{
+                width:'100vw',
+                maxWidth:'100vw',
+                height:'100vh',
+                maxHeight:'100vh'
+            }
         },
 
         {
             id:3,
             name:'This portfolio site',
-            tech:['../../resources/images/logos/web_tech/react.svg', '../../resources/images/logos/web_tech/react-router.svg', '../../resources/images/logos/web_tech/sass.svg', '../../resources/images/logos/web_tech/php.svg', '../../resources/images/logos/web_tech/webpack-icon.svg', '../../resources/images/logos/web_tech/snapsvg.svg'],
+            tech:['../../resources/images/logos/web_tech/react.svg', '../../resources/images/logos/web_tech/react-router.svg', '../../resources/images/logos/web_tech/sass.svg', '../../resources/images/logos/web_tech/php.svg', '../../resources/images/logos/web_tech/snapsvg.svg', '../../resources/images/logos/web_tech/webpack-icon.svg'],
             pic:'',
             blurb:'Wanting to learn more about the React library and needing to make a porfolio site; I decided to do them in parallel.',
             longDescription:'',
             github:'https://github.com/THarns/reactStatic',
             imgLink:null,
-            pos:'3'
+            delayLength:.75,
+            pos:3,
+            expanded:{
+                width:'100vw',
+                maxWidth:'100vw',
+                height:'100vh',
+                maxHeight:'100vh'
+            }
         }
     ]);
 
